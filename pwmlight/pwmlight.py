@@ -42,7 +42,7 @@ class pwmlight():
         self.update()
 
     def getState(self):
-        if self._brightness  * self._convfactor + self._min_cycle > self._min_cycle:
+        if self.brightness  * self._convfactor + self._min_cycle > self._min_cycle:
             return True
         else:
             return False
