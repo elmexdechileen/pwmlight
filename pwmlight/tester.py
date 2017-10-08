@@ -1,6 +1,6 @@
 import pwmlight
 
-light = pwmlight.pwmlight(18, 5000, 20000, 'test')
+light = pwmlight.pwmlight(18, 50000, 1000000, 'test')
 
 light.brightness = 200
 
