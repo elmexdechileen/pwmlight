@@ -6,8 +6,8 @@ class pwmlight():
         self._min_cycle = min_cycle
         self._max_cycle = max_cycle
         self._name = name
-        self._state = None
-        self._brightness = None
+        self._state = True
+        self._brightness = 255
         self._gpio = pg.pi()
         self._convfactor = (max_cycle - min_cycle) / 255
         self._freq = frequency

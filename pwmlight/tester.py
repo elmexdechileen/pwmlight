@@ -7,4 +7,4 @@ light.brightness = 200
 
 print(str(light.brightness))
 
-print(str(light.State()))
+print(str(light.getState()))
