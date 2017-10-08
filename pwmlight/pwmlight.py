@@ -17,7 +17,7 @@ class pwmlight():
 
     @property
     def brightness(self):
-        return self._gpio.get_PWM_frequency(self._pin)
+        return self._brightness
 
     @property
     def state(self):
@@ -41,8 +41,12 @@ class pwmlight():
         self._state = False
         self.update()
 
+    def setBrightness(self, value):
+        self._brightness = value
+        self.update()
+
     def getState(self):
-        if self.brightness  * self._convfactor + self._min_cycle > self._min_cycle:
+        if self._brightness  * self._convfactor + self._min_cycle > self._min_cycle:
             return True
         else:
             return False
