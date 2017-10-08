@@ -1,7 +1,7 @@
 import pigpio as pg
 
 class pwmlight():
-    def __init__(self, pin, min_cycle, max_cycle, name, frequency = 2000):
+    def __init__(self, pin, min_cycle, max_cycle, name = None, frequency = 2000):
         self._pin = pin
         self._min_cycle = min_cycle
         self._max_cycle = max_cycle
@@ -11,6 +11,9 @@ class pwmlight():
         self._gpio = pg.pi()
         self._convfactor = (max_cycle - min_cycle) / 255
         self._freq = frequency
+
+        if name is None:
+            self._name = 'P' + str(pin)
 
     @property
     def brightness(self):
@@ -23,7 +26,7 @@ class pwmlight():
 
     def turnOn(self):
         self._gpio.hardware_PWM(self._pin, self._freq,
-                                (self._brightness * self._convfactor + self._min_cycle))
+                                (self._max_cycle))
 
     def turnOff(self):
         self._gpio.hardware_PWM(self._pin, self._freq, self._min_cycle)
