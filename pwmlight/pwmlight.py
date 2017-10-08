@@ -40,7 +40,7 @@ class pwmlight():
         self._state = False
 
     def getState(self):
-        if self._brightness > self._min_cycle:
+        if self._brightness  * self._convfactor + self._min_cycle > self._min_cycle:
             return True
         else:
             return False
@@ -48,3 +48,6 @@ class pwmlight():
     def update(self):
         self._gpio.hardware_PWM(self._pin, self._freq,
                                 (self._brightness * self._convfactor * int(self._state) + self._min_cycle))
+
+    def debug(self):
+        self._gpio.hardware_PWM(self._pin, self._freq, 250000)
