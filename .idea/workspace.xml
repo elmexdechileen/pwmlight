@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2a5feb1-8dad-4fbc-bbfb-c8092bcbf24a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pwmlight/pwmlight.py" afterPath="$PROJECT_DIR$/pwmlight/pwmlight.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pwmlight/tester.py" afterPath="$PROJECT_DIR$/pwmlight/tester.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tester.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tester.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pwmlight/tester.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="567">
@@ -36,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pwmlight.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pwmlight.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pwmlight/pwmlight.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
+            <state relative-caret-position="788">
               <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
               <folding />
             </state>
@@ -192,14 +191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pwmlight/pwmlight.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pwmlight/tester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -207,6 +198,14 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pwmlight/pwmlight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
