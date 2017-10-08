@@ -16,6 +16,14 @@ class pwmlight():
             self._name = 'P' + str(pin)
 
     @property
+    def brightness(self):
+        return self._brightness
+
+    @brightness.setter
+    def brightness(self, value):
+        self._brightness = value
+        
+    @property
     def state(self):
         return self._state
 
